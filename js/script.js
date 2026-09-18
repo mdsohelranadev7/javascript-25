@@ -24,7 +24,7 @@ loginbtn.addEventListener('click', () => {
     }
 
     else {
-        alert('Wrong Number or Password!  num : 1234 pass 123')
+        alert('type this number: 1234 or Password:123')
     }
 
 })
