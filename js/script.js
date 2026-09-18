@@ -47,6 +47,14 @@ cashoutbtn.addEventListener('click', () => {
 
 
 addmoney.addEventListener('click', () => {
+
+    if (addbalance.value == "") {
+        alert('please enter your add amount')
+        return
+    }
+
+
+
     let kss = parseInt(current.innerText)
     let ks = parseInt(addbalance.value)
     current.innerText = kss + ks
@@ -54,10 +62,19 @@ addmoney.addEventListener('click', () => {
 
 })
 cashout.addEventListener('click', () => {
+
+    if (cashoutbalance.value == "") {
+        alert('please enter your cashout amount')
+        return
+    }
+
+
     let kss = parseInt(current.innerText)
     let ks = parseInt(cashoutbalance.value)
     current.innerText = kss - ks
     cashoutbalance.value = ""
 
 })
+
+
 

@@ -34,29 +34,36 @@
 
     <!-- cart part  -->
     <div id="cardpart" class=" w-75 mx-auto flex justify-center items-center mt-50 pb-5 h-80 flex-col border" hidden>
-        <h2 class="text-2xl text-blue-400">Card</h2>
-        <P>Sohel rana</P>
-        Account NO : XXXXXXXXXXXXX
-        <P id="current">2000</P>
-        <div class="flex w-full">
-            <button id="addmoneybtn" class=" w-[50%] bg-green-500 text-white">Add money</button>
-            <button id="cashoutbtn" class="w-[50%] bg-red-500 text-white">Cashout</button>
+        <div class=" border flex  gap-y-2 flex-col items-center p-2 bg-blue-200">
+            <div class="flex justify-between gap-x-10">
+                <h2 class="text-[20px] text-blue-400">Bank card</h2>
+                <h2 class=" text-blue-400">Active</h2>
+            </div>
+            <P id="current">2000</P>
+            <div class="flex justify-between gap-x-8">
+                <span class="text-[8px]">Account NO : XXXXXXXXXXXXX</span>
+                <span class="text-[8px]">Sohel rana</span>
+            </div>
+        </div>
+        <div class="flex gap-x-2 w-48 mt-2">
+            <button id="addmoneybtn" class=" w-[50%] bg-green-500 text-white uppercase">Add+</button>
+            <button id="cashoutbtn" class="w-[50%] bg-red-500 text-white uppercase">Cashout</button>
         </div>
         <!-- addmoney part -->
-        <div id="addmoneyinput" class="w-75" hidden>
-            <h3>Add money</h3>
-            <input id="addbalance" class="border w-full" type="number" placeholder="Enter your add amount">
+        <div id="addmoneyinput" class="w-48" hidden>
+            <h3 class="uppercase">Add money</h3>
+            <input id="addbalance" class="border w-fulln" type="number" placeholder="Enter add amount">
 
-            <button id="addmoney" class="px-6 py-1 bg-green-500 mt-2 rounded-2xl text-white">addmoney</button>
+            <button id="addmoney" class="px-6 py-1 bg-green-500 mt-2 rounded-2xl text-white uppercase">addmoney</button>
         </div>
         <!-- addmoney part -->
 
 
         <!-- cashout part  -->
-        <div id="cashoutinput" class="w-75" hidden>
-            <h3>Cashout</h3>
-            <input id="cashoutbalance" class="border w-full" type="number" placeholder="Enter your cashout amount">
-            <button id="cashout" class="px-6 py-1 bg-red-500 mt-2 rounded-2xl text-white">cashout</button>
+        <div id="cashoutinput" class="w-48" hidden>
+            <h3 class="uppercase">Cashout</h3>
+            <input id="cashoutbalance" class="border w-fulln" type="number" placeholder="Enter cashout amount">
+            <button id="cashout" class="px-6 py-1 bg-red-500 mt-2 rounded-2xl text-white uppercase">cashout</button>
         </div>
         <!-- cashout part  -->
     </div>
